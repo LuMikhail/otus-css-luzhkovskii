@@ -1,5 +1,4 @@
 body {
-
     font-family: 'Roboto', serif;
     font-style: normal;
     font-size: 20px;
@@ -47,7 +46,7 @@ h4 {
     line-height: 21px;
 }
 
-.Blockquote {
+.blockquote {
     /* “The more I deal */
     font-family: 'Bitter';
     font-size: 26px;
@@ -60,6 +59,7 @@ h4 {
 .louisse_red {
     font-size: 16px;
     line-height: 19px;
+    font-weight: 100;
 }
 
 .i_just_really {
@@ -75,6 +75,7 @@ h4 {
 .сreativity_2 {
     font-size: 16px;
     line-height: 19px;
+    font-weight: 100;
 }
 
 dd {
@@ -90,3 +91,29 @@ dd {
 .cap {
     text-transform: capitalize;
 }
+
+.wrapper {
+    max-width: 1065px;
+    margin: 0 auto;
+}
+
+.hero {
+    height: 630px;
+    position: relative;
+}
+
+.hero-box {
+    background-color: white;
+    width: 56%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* 
+.weight_normal {
+   font-weight: 100;
+   font-size: 16px;
+   line-height: 19px;
+} */
