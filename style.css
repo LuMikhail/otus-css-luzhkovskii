@@ -93,23 +93,26 @@ dd {
 }
 
 .wrapper {
-    max-width: 1065px;
     margin: 0 auto;
 }
 
 .hero {
+    width: 54%;
     height: 630px;
+    text-align: center;
     position: relative;
 }
 
 .hero-box {
     background-color: white;
     width: 56%;
+    height: 57%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
 }
 
 .nav-menu {
@@ -125,16 +128,15 @@ dd {
     line-height: 10px;
 }
 
-.opend-element {
+.drop-down-element {
     position: absolute;
     z-index: 50;
     display: none;
-    width: 300px;
     padding: 20px;
     left: 35%;
     right: 35%;
 }
 
-.nav-menu:hover .opend-element {
+.nav-menu:hover .drop-down-element {
     display: block;
 }
