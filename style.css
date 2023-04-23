@@ -1,0 +1,113 @@
+body {
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+}
+
+/* для тега <b> по умолчанию bold  в место font-weight: 700 */
+h1 {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 86px;
+    line-height: 120%;
+    text-align: center;
+}
+
+.modern_web {
+    font-weight: 500;
+    line-height: 23px;
+    text-align: center;
+}
+
+h2,
+.strengths {
+    /* Katya Mills
+       Strengths*/
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 86px;
+    line-height: 115px;
+}
+
+h4 {
+    /* Designers 
+     Biography
+     Testimonials
+     Strong points*/
+    font-weight: 700;
+    line-height: 23px;
+}
+
+.art_director {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.blockquote {
+    /* “The more I deal */
+    font-family: 'Bitter';
+    font-size: 26px;
+    line-height: 31px;
+
+}
+
+.jess_wonder,
+.cameron_clein,
+.louisse_red {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 100;
+}
+
+.i_just_really {
+    font-family: 'Bitter';
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+}
+
+.website,
+.сreativity_1,
+.сreativity_2 {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 100;
+}
+
+dd {
+    font-family: 'Bitter';
+    font-size: 34px;
+    line-height: 41px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.cap {
+    text-transform: capitalize;
+}
+
+.wrapper {
+    max-width: 1065px;
+    margin: 0 auto;
+}
+
+.hero {
+    height: 630px;
+    position: relative;
+}
+
+.hero-box {
+    background-color: white;
+    width: 56%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
