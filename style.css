@@ -111,3 +111,30 @@ dd {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
+.nav-menu {
+    text-align: center;
+    position: relative;
+}
+
+.button-menu {
+    margin: 30px;
+}
+
+.letters {
+    line-height: 10px;
+}
+
+.opend-element {
+    position: absolute;
+    z-index: 50;
+    display: none;
+    width: 300px;
+    padding: 20px;
+    left: 35%;
+    right: 35%;
+}
+
+.nav-menu:hover .opend-element {
+    display: block;
+}
