@@ -13,83 +13,43 @@ h1 {
     font-size: 86px;
     line-height: 120%;
     text-align: center;
+    margin: 110px 20px 0px;
+    box-sizing: border-box;
+
 }
 
 .modern_web {
     font-weight: 500;
     line-height: 23px;
     text-align: center;
+    margin: 14px 21.5px 110px;
+    box-sizing: border-box;
 }
 
-h2,
-.strengths {
-    /* Katya Mills
-       Strengths*/
-    font-family: 'Playfair Display';
-    font-weight: 500;
-    font-size: 86px;
-    line-height: 115px;
-}
-
-h4 {
-    /* Designers 
-     Biography
-     Testimonials
-     Strong points*/
-    font-weight: 700;
-    line-height: 23px;
-}
-
-.art_director {
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-}
-
-.blockquote {
-    /* “The more I deal */
-    font-family: 'Bitter';
-    font-size: 26px;
-    line-height: 31px;
-
-}
-
-.jess_wonder,
-.cameron_clein,
-.louisse_red {
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 100;
-}
-
-.i_just_really {
-    font-family: 'Bitter';
-    font-size: 32px;
-    line-height: 38px;
+.nav-menu {
     text-align: center;
-
+    position: relative;
 }
 
-.website,
-.сreativity_1,
-.сreativity_2 {
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 100;
+.button-menu {
+    margin: 10px;
 }
 
-dd {
-    font-family: 'Bitter';
-    font-size: 34px;
-    line-height: 41px;
+.letters {
+    line-height: 10px;
 }
 
-.uppercase {
-    text-transform: uppercase;
+.drop-down-element {
+    z-index: 50;
+    display: none;
+    padding: 20px;
+    left: 35%;
+    right: 35%;
+    position: absolute;
 }
 
-.cap {
-    text-transform: capitalize;
+.nav-menu:hover .drop-down-element {
+    display: block;
 }
 
 .wrapper {
@@ -102,41 +62,21 @@ dd {
     text-align: center;
     position: relative;
 }
+/*hero-image маштабируется под размер hero*/
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
 .hero-box {
     background-color: white;
     width: 56%;
     height: 57%;
-    position: absolute;
     top: 50%;
     left: 50%;
+    position: absolute;
     transform: translate(-50%, -50%);
     text-align: center;
-
-}
-
-.nav-menu {
-    text-align: center;
-    position: relative;
-}
-
-.button-menu {
-    margin: 30px;
-}
-
-.letters {
-    line-height: 10px;
-}
-
-.drop-down-element {
-    position: absolute;
-    z-index: 50;
-    display: none;
-    padding: 20px;
-    left: 35%;
-    right: 35%;
-}
-
-.nav-menu:hover .drop-down-element {
-    display: block;
 }
