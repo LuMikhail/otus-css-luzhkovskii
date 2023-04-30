@@ -59,7 +59,7 @@ body {
     object-position: center;
 }
 
-/*hero-image масштабируется под размер wrapper hero*/
+/*hero-box масштабируется под размер wrapper hero по центру*/
 .hero-box {
     background-color: white;
     width: 56%;
