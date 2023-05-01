@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+}
+
 body {
     font-family: 'Roboto', serif;
     font-style: normal;
@@ -7,6 +11,7 @@ body {
 }
 
 .nav-menu {
+    width: 1440px;
     text-align: center;
     position: relative;
 }
@@ -34,13 +39,18 @@ body {
 
 /*задал  блоку абсалютую величину, 
 чтобы потомкам можно было использовать относительные*/
+main {
+    width: 1440px;
+    margin: auto;
+}
+
 .first-block {
-    max-width: 1440px;
-    margin: 0 auto;
+    max-width: 100%;
+    margin: auto;
 }
 
 .wrapper {
-    margin: 0 auto;
+    margin: auto;
 }
 
 .hero {
@@ -82,7 +92,7 @@ h1 {
     font-size: 86px;
     line-height: 120%;
     text-align: center;
-    margin: 110px 20px 0px;
+    padding: 6.875rem 1.25rem 0;
     box-sizing: border-box;
 }
 
@@ -90,6 +100,6 @@ h1 {
     font-weight: 500;
     line-height: 23px;
     text-align: center;
-    margin: 14px 21.5px 110px;
+    padding: 0.875rem 1.343rem 6.875rem;
     box-sizing: border-box;
 }
