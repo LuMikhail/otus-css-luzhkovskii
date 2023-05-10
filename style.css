@@ -16,7 +16,7 @@ main {
     margin: auto;
 }
 
-.grid-contener {
+.grid-container {
     display: grid;
     grid-template-columns: 46.5% repeat(auto-fit, 23.22%);
     grid-template-rows: 100px;
