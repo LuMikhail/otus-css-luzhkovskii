@@ -12,18 +12,107 @@ body {
 /*задал  блоку абсалютую величину, 
 чтобы потомкам можно было использовать относительные*/
 main {
-    width: 1440px;
+    max-width: 1440px;
     margin: auto;
 }
 
-article {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 840px;
+.nav-menu {
+    max-width: 1440px;
+    text-align: center;
+    position: relative;
 }
 
-.item-1 {
+.button-menu {
+    margin: 10px;
+}
+
+.letters {
+    line-height: 10px;
+}
+
+.drop-down-element {
+    z-index: 50;
+    display: none;
+    padding: 20px;
+    left: 35%;
+    right: 35%;
+    position: absolute;
+}
+
+.nav-menu:hover .drop-down-element {
+    display: block;
+}
+
+
+.section-mod-studio {
+    max-width: 100%;
+    margin: auto;
+}
+
+.wrapper {
+    margin: auto;
+}
+
+.hero {
+    max-width: 74%;
+    /* убрал жестко заданную высоту, чтобы изображение масштабировалось */
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+
+/*hero-image масштабируется под размер hero*/
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*hero-box масштабируется под размер wrapper hero по центру*/
+.hero-box {
+    background-color: white;
+    width: 56%;
+    height: 57%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: normal;
+    /* Добавляет полосы прокрутки при необходимости:
+     если содержимое не помещается — они появятся,
+     если все помещается — их не будет. */
+    overflow: auto;
+}
+
+h1 {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 86px;
+    line-height: 120%;
+    text-align: center;
+    padding: 6.875rem 1.25rem 0;
+    box-sizing: border-box;
+}
+
+.modern_web {
+    font-weight: 500;
+    line-height: 23px;
+    text-align: center;
+    padding: 0.875rem 1.343rem 6.875rem;
+    box-sizing: border-box;
+}
+/* Второй блок */
+.section-biography {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 840px;
+    margin-top: 7.93rem;
+}
+
+.item-desert {
     margin: 0 0 0 9.31%; 
     width: 38.4%;
 }
@@ -34,7 +123,7 @@ article {
     object-fit: cover;
 }
 
-.item-2 {
+.section-header-biography {
     display: flex;
     width: 10.07%;
     height: 12.86%;
@@ -42,13 +131,13 @@ article {
     align-items: center;
 }
 
-.inner-box {
+.section-header-text {
     font-weight: 700;
-    line-height: 23px;
+    line-height: 1.44rem;
     transform: rotate(-90deg);
 }
 
-.container-katya-mills {
+.container-biographic-description {
     display: flex;
     flex-direction: column;
     width: 31.18%;
@@ -58,23 +147,21 @@ article {
     height: 20%;
 }
 
-.item-4 {
+.container-header-text {
     height: 30%;
 }
 
 h2 {
-    /* Katya Mills
-       Strengths*/
     font-family: 'Playfair Display';
     font-weight: 500;
     font-size: 86px;
-    line-height: 115px;
+    line-height: 7.19rem;
 }
 
-.art_director {
+.job-title {
     font-weight: 500;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.32rem;
     padding: 0px 0px 3.75rem 0px;
 }
 
@@ -83,8 +170,7 @@ h2 {
 }
 
 .blockquote {
-    /* “The more I deal */
     font-family: 'Bitter';
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.94rem;
 }
