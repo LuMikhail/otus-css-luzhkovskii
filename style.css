@@ -109,7 +109,6 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    height: 840px;
     margin-top: 7.93rem;
 }
 
@@ -122,21 +121,22 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    outline: auto;
+
 }
 
 .section-header-biography {
     display: flex;
     width: 10.07%;
-    height: 12.86%;
     flex-direction: row;
-    align-items: center;
-}
-
-.section-header-text {
+    align-items: start;
+  }
+  
+  h4 {
     font-weight: 700;
     line-height: 1.44rem;
     transform: rotate(-90deg);
-}
+  }
 
 .container-biographic-description {
     display: flex;
@@ -144,12 +144,11 @@ h1 {
     width: 31.18%;
 }
 
-.item-void {
-    height: 20%;
-}
-
 .container-header-text {
-    height: 30%;
+    display: flex;
+    height: 50%;
+    flex-direction: row;
+    align-items: end;
 }
 
 h2 {
@@ -157,6 +156,7 @@ h2 {
     font-weight: 500;
     font-size: 86px;
     line-height: 7.19rem;
+    padding-bottom: 30px;
 }
 
 .job-title {
