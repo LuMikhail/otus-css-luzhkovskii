@@ -14,7 +14,8 @@ body {
 main {
     max-width: 1440px;
     margin: auto;
-    overflow: hidden; /* Запрещаем горизонтальный скролл */
+    overflow: hidden;
+    /* Запрещаем горизонтальный скролл */
 }
 
 .nav-menu {
@@ -104,6 +105,7 @@ h1 {
     padding: 0.875rem 1.343rem 6.875rem;
     box-sizing: border-box;
 }
+
 /* Второй блок */
 .section-biography {
     display: flex;
@@ -113,7 +115,7 @@ h1 {
 }
 
 .item-desert {
-    margin: 0 0 0 9.31%; 
+    margin: 0 0 0 9.31%;
     width: 38.4%;
 }
 
@@ -121,22 +123,21 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    outline: auto;
-
 }
 
 .section-header-biography {
     display: flex;
     width: 10.07%;
-    flex-direction: row;
+    padding: 2.5rem 0;
     align-items: start;
-  }
-  
-  h4 {
+
+}
+
+h4 {
     font-weight: 700;
     line-height: 1.44rem;
     transform: rotate(-90deg);
-  }
+}
 
 .container-biographic-description {
     display: flex;
