@@ -1,113 +1,273 @@
+* {
+    margin: 0;
+}
+
 body {
     font-family: 'Roboto', serif;
     font-style: normal;
     font-size: 20px;
-    font-weight: 400;
     color: #000000;
 }
 
-/* для тега <b> по умолчанию bold  в место font-weight: 700 */
+/*задал  блоку абсалютую величину, 
+чтобы потомкам можно было использовать относительные*/
+main {
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+    /* Запрещаем горизонтальный скролл */
+}
+
+.nav-menu {
+    max-width: 1440px;
+    text-align: center;
+    position: relative;
+}
+
+.button-menu {
+    margin: 10px;
+}
+
+.letters {
+    line-height: 10px;
+}
+
+.drop-down-element {
+    z-index: 50;
+    display: none;
+    padding: 20px;
+    left: 35%;
+    right: 35%;
+    position: absolute;
+}
+
+.nav-menu:hover .drop-down-element {
+    display: block;
+}
+
+
+.section-mod-studio {
+    max-width: 100%;
+    margin: auto;
+}
+
+.wrapper {
+    margin: auto;
+}
+
+.hero {
+    max-width: 74%;
+    /* убрал жестко заданную высоту, чтобы изображение масштабировалось */
+    height: auto;
+    text-align: center;
+    position: relative;
+}
+
+/*hero-image масштабируется под размер hero*/
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*hero-box масштабируется под размер wrapper hero по центру*/
+.hero-box {
+    background-color: white;
+    width: 56%;
+    height: 57%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: normal;
+    /* Добавляет полосы прокрутки при необходимости:
+     если содержимое не помещается — они появятся,
+     если все помещается — их не будет. */
+    overflow: auto;
+}
+
 h1 {
     font-family: 'Playfair Display';
     font-weight: 500;
     font-size: 86px;
     line-height: 120%;
     text-align: center;
+    padding: 6.875rem 1.25rem 0;
+    box-sizing: border-box;
 }
 
 .modern_web {
     font-weight: 500;
     line-height: 23px;
     text-align: center;
+    padding: 0.875rem 1.343rem 6.875rem;
+    box-sizing: border-box;
 }
 
-h2,
-.strengths {
-    /* Katya Mills
-       Strengths*/
-    font-family: 'Playfair Display';
-    font-weight: 500;
-    font-size: 86px;
-    line-height: 115px;
+/* Второй блок */
+.section-biography {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 7.93rem;
+}
+
+.item-desert {
+    margin: 0 0 0 9.31%;
+    width: 38.4%;
+}
+
+.img-sand {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-header-biography {
+    display: flex;
+    min-width: 50px;
+    width: 10.07%;
+    padding: 2.5rem 0;
+    align-items: start;
 }
 
 h4 {
-    /* Designers 
-     Biography
-     Testimonials
-     Strong points*/
     font-weight: 700;
-    line-height: 23px;
+    line-height: 1.44rem;
+    transform: rotate(-90deg);
 }
 
-.art_director {
+.container-biographic-description {
+    display: flex;
+    flex-direction: column;
+    width: 31.18%;
+}
+
+.container-header-text {
+    display: flex;
+    height: 50%;
+    flex-direction: row;
+    align-items: end;
+}
+
+h2 {
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 86px;
+    line-height: 7.19rem;
+    padding-bottom: 30px;
+}
+
+.job-title {
     font-weight: 500;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.32rem;
+    padding: 0px 0px 3.75rem 0px;
+}
+
+.dash {
+    padding: 0.5rem 0;
 }
 
 .blockquote {
-    /* “The more I deal */
     font-family: 'Bitter';
     font-size: 26px;
-    line-height: 31px;
-
+    line-height: 1.94rem;
 }
 
-.jess_wonder,
-.cameron_clein,
-.louisse_red {
+/*Четыертый блок*/
+.section-testimonials {
+    width: 100%;
+    display: grid;
+    /* minmax чтобы при сужении не исчезал первый столбец */
+    grid-template-columns: minmax(30px, 9.03%) 81.94% 9.03%;
+    grid-template-rows: 0.28fr 0.93fr;
+    margin-top: 1044px;
+}
+
+.testimonials-header {
+    grid-row: 1;
+    grid-column: 2;
+    transform: rotate(0deg);
+}
+
+.section-testimonials-conteiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.item-testimonials {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-column: 2;
+    justify-items: center;
+    align-items: center;
+}
+
+.item-coffee-pit {
+    display: grid;
+    grid-column: 1;
+    grid-template-columns: 12.72% 87.28%;
+    grid-template-rows: 44% 16% 43%;
+    justify-items: center;
+}
+
+.web-address {
     font-size: 16px;
-    line-height: 19px;
-    font-weight: 100;
+    line-height: 1.19rem;
 }
 
-.i_just_really {
+.website-text {
+    grid-row: 1;
+    grid-column: 1;
+    transform: rotate(-90deg);
+    align-self: center;
+    padding-bottom: 2.44rem;
+}
+
+.сreativity-text {
+    grid-row: 2;
+    grid-column: 1;
+    transform: rotate(-90deg);
+    align-self: center;
+    padding-bottom: 2.44rem;
+}
+
+.сreativity-text-next-row {
+    grid-row: 3;
+    grid-column: 1;
+    transform: rotate(-90deg);
+    align-self: center;
+    padding-bottom: 2.44rem;
+
+}
+
+.coffee-pit-img {
+    grid-row: 1/4;
+    grid-column: 2;
+}
+
+.item-img {
+    display: block;
+    width: 100%;
+    height: 98%;
+    object-fit: cover
+}
+
+.testimonials-text {
+    grid-row: 1;
     font-family: 'Bitter';
     font-size: 32px;
-    line-height: 38px;
+    line-height: 2.38rem;
     text-align: center;
-
+    width: 37.6%;
 }
 
-.website,
-.сreativity_1,
-.сreativity_2 {
-    font-size: 16px;
-    line-height: 19px;
-    font-weight: 100;
-}
-
-dd {
-    font-family: 'Bitter';
-    font-size: 34px;
-    line-height: 41px;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.cap {
-    text-transform: capitalize;
-}
-
-.wrapper {
-    max-width: 1065px;
-    margin: 0 auto;
-}
-
-.hero {
-    height: 630px;
-    position: relative;
-}
-
-.hero-box {
-    background-color: white;
-    width: 56%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.item-walk-img {
+    grid-row: 2;
+    align-self: start;
 }
