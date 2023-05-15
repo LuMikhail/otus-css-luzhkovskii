@@ -127,7 +127,7 @@ h1 {
 
 .section-header-biography {
     display: flex;
-    min-width: 50px;
+    min-width: 3.12rem;
     width: 10.07%;
     padding: 2.5rem 0;
     align-items: start;
