@@ -133,8 +133,9 @@ h1 {
     align-items: start;
 }
 
-h4 {
+h2 {
     font-weight: 700;
+    font-size: 20px;
     line-height: 1.44rem;
     transform: rotate(-90deg);
 }
@@ -145,14 +146,14 @@ h4 {
     width: 31.18%;
 }
 
-.container-header-text {
+.item-header-text {
     display: flex;
     height: 50%;
     flex-direction: row;
     align-items: end;
 }
 
-h2 {
+.style-font {
     font-family: 'Playfair Display';
     font-weight: 500;
     font-size: 86px;
@@ -177,7 +178,7 @@ h2 {
     line-height: 1.94rem;
 }
 
-/*Четыертый блок*/
+/*Четвертый блок*/
 .section-testimonials {
     width: 100%;
     display: grid;
@@ -214,6 +215,12 @@ h2 {
     grid-template-columns: 12.72% 87.28%;
     grid-template-rows: 44% 16% 43%;
     justify-items: center;
+
+}
+
+.coffee-link {
+    text-decoration: none;
+    color: #000000;
 }
 
 .web-address {
@@ -253,8 +260,7 @@ h2 {
 
 .item-img {
     display: block;
-    width: 100%;
-    height: 98%;
+    max-width: 100%;
     object-fit: cover
 }
 
