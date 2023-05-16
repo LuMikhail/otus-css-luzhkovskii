@@ -127,14 +127,15 @@ h1 {
 
 .section-header-biography {
     display: flex;
+    min-width: 3.12rem;
     width: 10.07%;
     padding: 2.5rem 0;
-    min-width: 3.12rem;
     align-items: start;
 }
 
-h4 {
+h2 {
     font-weight: 700;
+    font-size: 20px;
     line-height: 1.44rem;
     transform: rotate(-90deg);
 }
@@ -145,14 +146,14 @@ h4 {
     width: 31.18%;
 }
 
-.container-header-text {
+.item-header-text {
     display: flex;
     height: 50%;
     flex-direction: row;
     align-items: end;
 }
 
-h2 {
+.style-font {
     font-family: 'Playfair Display';
     font-weight: 500;
     font-size: 86px;
