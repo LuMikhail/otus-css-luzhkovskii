@@ -191,6 +191,8 @@ h2 {
     flex-direction: row;
     align-items: flex-end;
     gap: 1.99rem;
+
+
 }
 
 .designer-header {
@@ -251,6 +253,7 @@ h2 {
     display: grid;
     justify-content: center;
     margin-top: 16.25rem;
+    max-height: 840px;
 }
 
 .section-testimonials-conteiner {
@@ -345,4 +348,82 @@ h2 {
 .item-walk-img {
     grid-row: 2;
     align-self: start;
+}
+
+@media screen and (max-width: 738px) {
+
+    .сreativity-text-next-row,
+    .сreativity-text {
+        grid-column: 2;
+        transform: rotate(0deg);
+        justify-self: start;
+        align-self: auto;
+    }
+}
+
+/* strong-points-section */
+.strengths-section {
+    position: relative;
+}
+
+.strengths-header {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    height: 23px;
+    top: 9%;
+    left: 26.9%;
+    position: absolute;
+}
+
+.strengths-title {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 86px;
+    line-height: 115px;
+}
+
+dd {
+    font-family: 'Bitter';
+    font-size: 34px;
+    line-height: 42.21px;
+}
+
+
+@supports (display: grid) {
+
+    .strengths-section {
+        /*Задал фиксированные размеры т к данной секции
+        применим горизонтальный скрол*/
+        margin-top: 6.625rem;
+        display: grid;
+        grid-template-rows: 665px;
+        grid-template-columns: 1fr 1fr 395px 1fr;
+        gap: 2.08%;
+        grid-auto-flow: column;
+        overflow: auto;
+        align-items: end;
+    }
+
+    .strenghts-text {
+        display: grid;
+        grid-template-rows: 21% 79%;
+        height: 100%;
+        align-items: end;
+        justify-items: center;
+    }
+
+    .strengths-title {
+        align-self: start;
+        grid-row: 1;
+    }
+
+    .strengths-list {
+        align-self: start;
+        grid-row: 2;
+        width: 57.97%;
+    }
+
+    .item-end {
+        order: 1;
+    }
 }
