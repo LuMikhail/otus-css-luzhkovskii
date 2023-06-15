@@ -582,10 +582,6 @@ h2 {
     color: #000000;
 }
 
-.link-style:hover {
-    -webkit-text-fill-color: rgb(0, 255, 81);
-}
-
 .web-address {
     font-size: 16px;
     line-height: 1.19rem;
@@ -625,10 +621,6 @@ h2 {
     text-align: center;
     width: 37.6%;
     align-self: center;
-}
-
-.item-walk-img {
-    grid-row: 2;
 }
 
 @media (max-width: 450px) {
@@ -880,7 +872,7 @@ h2 {
 
 }
 
-/* анимация на Strengths */
+/*Анимация на Strengths */
 .strengths-list-item:after {
     background-color: #f66d52;
     display: block;
@@ -895,8 +887,14 @@ h2 {
     width: 100%;
 }
 
+/*Анимация на menu-button*/
 .menu-button:hover {
     background-color: rgb(18, 103, 148);
     transform: scale(0.8);
     transition: background-color 2s, transform 2.5s;
+}
+
+/*Анимация testimonials-link*/
+.link-style:hover {
+    -webkit-text-fill-color: rgb(166, 0, 255);
 }
