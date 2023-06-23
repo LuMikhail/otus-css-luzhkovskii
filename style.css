@@ -500,13 +500,15 @@ h2 {
     }
 
     .designer-header {
-        left: 10%;
+        left: 2.6rem;
         top: 3%;
+        font-size: 18px;
+        line-height: 1.31rem;
     }
 
     .designer-font {
         line-height: 19px;
-        font-weight: 700;
+        font-weight: 400;
     }
 
     .text-padding {
@@ -582,7 +584,7 @@ h2 {
 }
 
 .link-style:hover {
-    -webkit-text-fill-color: rgb(0, 255, 81);
+    -webkit-text-fill-color: rgb(156, 143, 210);
 }
 
 .web-address {
@@ -782,8 +784,6 @@ h2 {
 .link-s {
     grid-column: 4;
     grid-row: 1;
-    text-decoration: underline;
-
 }
 
 @supports (display: grid) {
@@ -876,7 +876,6 @@ h2 {
         font-size: 24px;
         line-height: 37px;
     }
-
 }
 
 /* анимация на Strengths */
@@ -895,7 +894,13 @@ h2 {
 }
 
 .menu-button:hover {
-    background-color: rgb(18, 103, 148);
+    text-decoration: underline;
+    background-color: rgb(156, 143, 210);
     transform: scale(0.8);
     transition: background-color 2s, transform 2.5s;
+}
+
+/*добавил плавную прокрутку*/
+html {
+    scroll-behavior: smooth;
 }
