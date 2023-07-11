@@ -12,6 +12,8 @@
 *.log
 *.sql
 *.sqlite
+public/
+dist/
 
 # Спецфайлы операционных систем
 Thumbs.db

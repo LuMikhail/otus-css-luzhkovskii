@@ -1,11 +1,9 @@
 {
    "main": "webpack.config.js",
    "scripts": {
-      "bild-webpack": "webpack -c webpack.config.js",
-      "build-dev": "webpack",
-      "start-dev": "webpack serve",
-      "build-prod": "webpack -c webpack.config.prod.js",
-      "start": "webpack serve --mode development -c webpack.config.js"
+      "start": "webpack serve",
+      "build-dev": "webpack -c webpack.config.js",
+      "build-prod": "webpack -c webpack.config.prod.js"
    },
    "devDependencies": {
       "css-loader": "^6.8.1",
