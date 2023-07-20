@@ -166,7 +166,7 @@ main {
     }
 }
 
-@media (max-width: 852px) {
+@media (max-width: 860px) {
 
 
     .hero {
@@ -180,7 +180,7 @@ main {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
 
     .hero {
         display: grid;
@@ -311,7 +311,7 @@ h2 {
     padding-right: 300px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .section-biography {
         flex-wrap: wrap;
         margin-top: 4.9rem;
@@ -486,7 +486,7 @@ h2 {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .section-designers {
         margin-top: 4.3rem;
         padding-left: 1rem;
@@ -536,6 +536,7 @@ h2 {
 
 /*Четвертый блок section-testimonials*/
 .section-testimonials {
+    max-height: 813px;
     display: grid;
     justify-content: center;
     margin-top: 16.25rem;
@@ -632,6 +633,29 @@ h2 {
     grid-row: 2;
 }
 
+@media (max-width: 900px) {
+    .item-coffee-pit {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+
+    .web-address {
+        transform: rotate(0deg);
+    }
+
+    .coffee-pit-img {
+        width: 90%;
+        order: -1;
+    }
+
+    .testimonials-text {
+        width: 222px;
+    }
+
+}
+
 @media (max-width: 450px) {
     .section-testimonials {
         display: flex;
@@ -710,7 +734,7 @@ h2 {
 
 /* strong-points-section */
 .strengths-section {
-
+    margin-top: 8.625rem;
     position: relative;
     overflow: auto;
     display: flex;
@@ -718,7 +742,7 @@ h2 {
     align-items: flex-end;
     list-style-type: none;
     column-gap: 30px;
-    height: 665px;
+    height: 720px;
 }
 
 .strengths-header {
@@ -789,7 +813,6 @@ h2 {
 @supports (display: grid) {
 
     .strengths-section {
-        margin-top: -1.375rem;
         display: grid;
         grid-template-rows: 665px;
         grid-template-columns: 1fr 1fr 395px 1fr;
