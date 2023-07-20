@@ -4,5 +4,5 @@
 ## О проекте: Лендинг компании "Mod Studio"
 
 - основной стек технологий и приемы в верстке: box model, positioning, flexbox, grid, media queries, webpack.
-- ![отчет по Lighthouse Performance 79; Accessibility 95; SEO 90]([https://wampi.ru/image/R9OtBw4](https://github.com/LuMikhail/otus-css-luzhkovskii/blob/master/src/images/lighthouse.png)
+- ![отчет по Lighthouse Performance 79; Accessibility 95; SEO 90](https://github.com/LuMikhail/otus-css-luzhkovskii/blob/master/src/images/lighthouse.png)
 - команда для запуска проекта: npm run build-dev.
